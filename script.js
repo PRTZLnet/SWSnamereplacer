@@ -34,6 +34,6 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
   
 	v = v.replace(/\bBuddhistBerlin\b/g, "test");
-	
+	v = v.replace(/BuddhistBerlin\b/g, "test");
 	textNode.nodeValue = v;
 }
