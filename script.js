@@ -31,6 +31,7 @@ function walk(node)
 
 function handleText(textNode) 
 {
+	var v = textNode.nodeValue;
 	var things = ['Christian', 'Muslim', 'Secular', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jew', 'Buddhist'];
 	var thing = things[Math.floor(Math.random()*things.length)];
 	var thingstwo = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Bonn', 'Leipzig', 'Stuggart'];
