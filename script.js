@@ -33,9 +33,9 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 	var rel = ['Christian', 'Muslim', 'Secular', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jew', 'Buddhist'];
-	var rel_gen = things[Math.floor(Math.random()*things.length)];
+	var rel_gen = rel[Math.floor(Math.random()*things.length)];
 	var town = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Bonn', 'Leipzig', 'Stuggart'];
-	var town_gen = thingstwo[Math.floor(Math.random()*thingstwo.length)];
+	var town_gen = town[Math.floor(Math.random()*thingstwo.length)];
   
 	v = v.replace(/\bBuddhistBerlin\b/g, rel_gen+town_gen);
 	v = v.replace(/bbuddhistberlin\b/g, rel_gen+town_gen);
