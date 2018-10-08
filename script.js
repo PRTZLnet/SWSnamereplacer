@@ -36,7 +36,7 @@ function handleText(textNode)
 	var thingstwo = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Bonn', 'Leipzig', 'Stuggart'];
 	var thingtwo = thingstwo[Math.floor(Math.random()*thingstwo.length)];
   
-	v = v.replace(/\bBuddhistBerlin\b/g, `${thing+thingtwo}`);
-	v = v.replace(/BuddhistBerlin\b/g, `${thing+thingtwo}`);
+	v = v.replace(/\bBuddhistBerlin\b/g, "${thing}");
+	v = v.replace(/BuddhistBerlin\b/g, "${thing}");
 	textNode.nodeValue = v;
 }
