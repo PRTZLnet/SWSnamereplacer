@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "SWS Name Replacer",
+	"version": "1.0",
+	"description": "A victor's best friend",
+	"icons": { "16": "images/",
+           "48": "images/",
+          "128": "images/" },
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"], 
+			"js": ["script.js"],
+			"run_at": "document_end"  
+		}
+	]
+}
