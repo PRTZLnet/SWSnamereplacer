@@ -32,7 +32,7 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-	var rel = ['Christian', 'Muslim', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jew', 'Buddhist'];
+	var rel = ['Christian', 'Muslim', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jewish', 'Buddhist'];
 	var rel_gen = rel[Math.floor(Math.random()*rel.length)];
 	var town = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Munich', 'Leipzig', 'Stuggart'];
 	var town_gen = town[Math.floor(Math.random()*town.length)];
