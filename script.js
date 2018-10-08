@@ -32,12 +32,12 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-	var things = ['Christian', 'Muslim', 'Secular', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jew', 'Buddhist'];
-	var thing = things[Math.floor(Math.random()*things.length)];
-	var thingstwo = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Bonn', 'Leipzig', 'Stuggart'];
-	var thingtwo = thingstwo[Math.floor(Math.random()*thingstwo.length)];
+	var rel = ['Christian', 'Muslim', 'Secular', 'Atheist', 'Agnostic', 'Hindu', 'Sikh', 'Taoist', 'Shinto', 'Jew', 'Buddhist'];
+	var rel_gen = things[Math.floor(Math.random()*things.length)];
+	var town = ['Hamburg', 'Munich', 'Frankfurt', 'Cologne', 'Dresden', 'Berlin', 'Nuremberg', 'Hanover', 'Bonn', 'Leipzig', 'Stuggart'];
+	var town_gen = thingstwo[Math.floor(Math.random()*thingstwo.length)];
   
-	v = v.replace(/\bBuddhistBerlin\b/g, "${thing}");
-	v = v.replace(/BuddhistBerlin\b/g, "${thing}");
+	v = v.replace(/\bBuddhistBerlin\b/g, rel_gen+town_gen);
+	v = v.replace(/bbuddhistberlin\b/g, rel_gen+town_gen);
 	textNode.nodeValue = v;
 }
