@@ -5,7 +5,8 @@
 	"description": "A victor's best friend. Does not work on new reddit.",
 	"permissions": [
 		"https://*.reddit.com/*"
-		"http://*.reddit.com/*"
+		"http://*.reddit.com/*
+		],
 	"content_scripts": 
 	[
 		{
